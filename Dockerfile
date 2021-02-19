@@ -35,3 +35,11 @@ ENV ES_VERSION=6.5.2
 ENV ES_DOWNLOAD_URL=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ES_VERSION}.tar.gz
 
 RUN wget ${ES_DOWNLOAD_URL}
+
+#下载jdk
+
+ENV JDK_VERSION=1.8.0_222
+
+ENV JDK_DOWNLOAD_URL=http://mirrors.linuxeye.com/jdk/jdk-8u221-linux-x64.tar.gz
+
+RUN WGET ${JDK_DOWNLOAD_URL}
